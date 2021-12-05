@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/placesToStay.css') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+    <title>TRAVEL | Places to Stay</title>
+</head>
+<body>
+    <section class="showcase">
+        <header>
+            <h2 class="logo">travel</h2>
+            <div class="toggle"></div>
+        </header>
+
+        <div class="overlay"></div>
+
+       
+        
+        <main>
+
+         
+        
+          <!-- Marketing messaging and featurettes 
+          ================================================== -->
+          <!-- Wrap the rest of the page in another container to center all the content. -->
+        
+          <div class="container marketing">
+        
+            <!-- Three columns of text below the carousel -->
+            <div class="row">
+              <div class="col-lg-4">
+                <img class="bd-placeholder-img rounded-circle" id="massagePicture" src="{{ url_for('static', filename='img/BedandBreakfast.jpg') }}"></img>
+        
+                <h2 class="circleImageTitle">BED AND BREAKFAST</h2>
+                <p> Enjoy this small lodging establishment that offers overnight accommodation and breakfast. We are certain you will appreciate the private ambience, excellent food, and pampering that come with your stay. </p>
+                <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+              </div><!-- /.col-lg-4 -->
+              <div class="col-lg-4">
+                <img class="bd-placeholder-img rounded-circle" id="relaxation"  src="{{ url_for('static', filename='img/restaurants.jpg') }}" ></img>
+        
+                <h2 class="circleImageTitle">RESTAURANTS</h2>
+                <p>With a host of different cultures to choose from, wheather you would rather have a full course Italian feast or just stop by a taco truck. The possiblities are limitless. Be prepare to enjoy a variety of options and to bring your appetite.   </p>
+                <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+              </div><!-- /.col-lg-4 -->
+              <div class="col-lg-4">
+                <img class="bd-placeholder-img rounded-circle" id="nightLife"  src="{{ url_for('static', filename='img/coffee.jpg') }}"></img>
+        
+                <h2 class="circleImageTitle">COFFEE SHOPS</h2>
+                <p>Enjoy this establishment's cafe that primarily serves various types of local coffee, espressos, lattes, and cappuccion. Come out and enjoy the social interaction of talking, reading, writing, and other activities to pass the time.</p>
+                <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+              </div><!-- /.col-lg-4 -->
+            </div><!-- /.row -->
+        
+        
+            <!-- START THE FEATURETTES -->
+        
+            <hr class="featurette-divider">
+        
+            <div class="row featurette">
+              <div class="col-md-7">
+                <h2 class="featurette-heading">CAMPSITES    <span class="text-muted"></span></h2>
+                <p class="lead">If you are looking for peaceful night under the stars. Might we suggest staying the night in one of our many spacious campsites. Wheather you want to glamp or try to dive for the full experience of camping. We have a campsite suited to meet all of your needs.  </p>
+              </div>
+              <div class="col-md-5" >
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" id="campsite" src="{{ url_for('static', filename='img/campsite.jpg') }}" >  </img>
+                
+                
+              </div>
+            </div>
+        
+            <hr class="featurette-divider">
+        
+            <div class="row featurette">
+              <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading">CABINS <span class="text-muted"></span></h2>
+                <p class="lead">Cabins promote closeness, but that doesn’t mean cramped. Even the smallest cabins can enjoy openness that makes the most of the space available, whether it’s a great room, a roomy deck and cozy porch or an inviting guest room. And yet, even a sizable cabin sets aside space for meditative moments, needing only a simple bench and a few potted plants.</p>
+              </div>
+              <div class="col-md-5" >
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" id="cabin"  src="{{ url_for('static', filename='img/mountainCabin.jpg') }}"/></img>
+        
+              </div>
+            </div>
+        
+            <hr class="featurette-divider">
+        
+            <div class="row featurette">
+              <div class="col-md-7">
+                <h2 class="featurette-heading">HOTELS <span class="text-muted"></span></h2>
+                <p class="lead">Some of the world’s most breathtaking resorts are all located on mountaintops. If you are and early bird and want to catch the sunrise or an night owl and want to watch the sunset. Our hotels have stunning views that encapture those magical moments. </p>
+              </div>
+              <div class="col-md-5">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" id="hotel"  src="{{ url_for('static', filename='img/mountainHotel.jpg') }}" /></img>
+        
+              </div>
+            </div>
+        
+            <hr class="featurette-divider">
+        
+            <!-- /END THE FEATURETTES -->
+        
+          </div><!-- /.container -->
+    
+        
+          
+        </main>
+        
+  
+
+        
+        <!-- Begining of Social -->
+
+        <ul class="social">
+            <li><a href="#"><img src="{{ url_for('static', filename='img/facebook.png') }}"></a></li>
+            <li><a href="#"><img src="{{ url_for('static', filename='img/twitter.png') }}"></a></li>
+            <li><a href="#"><img src="{{ url_for('static', filename='img/instagram.png') }}"></a></li>
+        </ul>
+    </section>
+
+   
+        <!-- Begining of Menu -->
+    <div class="menu">
+        <ul>
+            <li><a href="http://127.0.0.1:5000/">Home</a></li>
+            <li><a href="http://127.0.0.1:5000/thingsToDo">Things to Do</a></li>
+            <li><a href="http://127.0.0.1:5000/placesToStay">Places to Stay</a></li>
+            <li><a href="http://127.0.0.1:5000/seasons">Seasons</a></li>
+            <li><a href="http://127.0.0.1:5000/contact">Contact</a></li>
+            <li><a href="http://127.0.0.1:5000/registration">Registration</a></li>
+            <li><a href="http://127.0.0.1:5000/login">Login</a></li>
+        </ul>
+    </div>
+
+    
+
+    
+    <script type="text/javascript" src="{{ url_for('static', filename='js/Hike.js') }}"></script>
+</body>
+</html>

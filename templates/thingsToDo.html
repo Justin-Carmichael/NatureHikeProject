@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/thingsToDo.css') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+    <title>TRAVEL | Things to Do</title>
+</head>
+<body>
+    <section class="showcase">
+        <header>
+            <h2 class="logo">travel</h2>
+            <div class="toggle"></div>
+        </header>
+
+        <div class="overlay"></div>
+
+        
+        
+        <main>
+
+         
+        
+          <!-- Marketing messaging and featurettes 
+          ================================================== -->
+          <!-- Wrap the rest of the page in another container to center all the content. -->
+        
+          <div class="container marketing">
+        
+            <!-- Three columns of text below the carousel -->
+            <div class="row">
+              <div class="col-lg-4">
+                <img class="bd-placeholder-img rounded-circle" id="massagePicture" src="{{ url_for('static', filename='img/MassageTherapy.jpg') }}"></img>
+        
+                <h2>RELAXATION</h2>
+                <p>Different kinds of massage, each with broadly different origins and aims - some focus on soothing muscle pain; others on increasing energy levels; some aim to improve a specific physical condition; others simply to help you relax.</p>
+                <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+              </div><!-- /.col-lg-4 -->
+              <div class="col-lg-4">
+                <img class="bd-placeholder-img rounded-circle" id="relaxation"  src="{{ url_for('static', filename='img/dealer.jpg') }}" ></img>
+        
+                <h2>LIFESTYLE</h2>
+                <p>A new year can be just the fresh start you need to start living a more active mountain lifestyle. Here,we want to motivate you to try new activities that spark creativity, improve your quality of life, and promote your overall well-being.</p>
+                <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+              </div><!-- /.col-lg-4 -->
+              <div class="col-lg-4">
+                <img class="bd-placeholder-img rounded-circle" id="nightLife"  src="{{ url_for('static', filename='img/band.jpg') }}"></img>
+        
+                <h2>NIGHT LIFE</h2>
+                <p> Enjoy entertainment available from the late evening into the early hours of the morning.There are many activites includes pubs, bars, nightclubs, parties, live music, concerts, cabarets, theatre, cinemas, and shows</p>
+                <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+              </div><!-- /.col-lg-4 -->
+            </div><!-- /.row -->
+        
+        
+            <!-- START THE FEATURETTES -->
+        
+            <hr class="featurette-divider">
+        
+            <div class="row featurette">
+              <div class="col-md-7">
+                <h2 class="featurette-heading">HIKING <span class="text-muted"></span></h2>
+                <p class="lead">If you’re looking to disconnect and reconnect with nature, hiking is the adventure for you. Filled with rolling mountains and low river valleys, this landscape is carved with family-friendly hikes, backcountry trails, and everything in between. What do all trails have in common? Scenic vista views that will leave you breathless. Find the path to where you belong.</p>
+              </div>
+              <div class="col-md-5" >
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" id="hikingPicture" src="{{ url_for('static', filename='img/bhiking.jpg') }}" >  </img>
+                
+                
+              </div>
+            </div>
+        
+            <hr class="featurette-divider">
+        
+            <div class="row featurette">
+              <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading">ZIPLINING <span class="text-muted"></span></h2>
+                <p class="lead">Cables that suspended above an incline to which a pulley and harness are attached for a rider. The incline of a zipline allows the rider to be pulled by gravity along the line. Enjoy todays's ziplines that are mainly used for recreation such as eco-tours.</p>
+              </div>
+              <div class="col-md-5" >
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" id="ZiplinePicture"  src="{{ url_for('static', filename='img/ziplining.jpg') }}"/></img>
+        
+              </div>
+            </div>
+        
+            <hr class="featurette-divider">
+        
+            <div class="row featurette">
+              <div class="col-md-7">
+                <h2 class="featurette-heading">WHITEWATER RAFTING <span class="text-muted"></span></h2>
+                <p class="lead">Are you looking to meander through nature and catch the magnificent sights? Whether it’s a half-day experience or an extended journey, there is a river waiting for you. Regardless of your experience, you can explore any of the many rapids from Class I to Class V.</p>
+              </div>
+              <div class="col-md-5">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" id="WhiteWater"  src="{{ url_for('static', filename='img/rafting.jpg') }}" /></img>
+        
+              </div>
+            </div>
+        
+            <hr class="featurette-divider">
+        
+            <!-- /END THE FEATURETTES -->
+        
+          </div><!-- /.container -->
+    
+        
+          
+        </main>
+        
+  
+
+        
+
+
+        <!-- Begining of Social -->
+
+
+        <ul class="social">
+            <li><a href="#"><img src="{{ url_for('static', filename='img/facebook.png') }}"></a></li>
+            <li><a href="#"><img src="{{ url_for('static', filename='img/twitter.png') }}"></a></li>
+            <li><a href="#"><img src="{{ url_for('static', filename='img/instagram.png') }}"></a></li>
+        </ul>
+    </section>
+
+   
+        <!-- Begining of Menu -->
+    <div class="menu">
+        <ul>
+            <li><a href="http://127.0.0.1:5000/">Home</a></li>
+            <li><a href="http://127.0.0.1:5000/thingsToDo">Things to Do</a></li>
+            <li><a href="http://127.0.0.1:5000/placesToStay">Places to Stay</a></li>
+            <li><a href="http://127.0.0.1:5000/seasons">Seasons</a></li>
+            <li><a href="http://127.0.0.1:5000/contact">Contact</a></li>
+            <li><a href="http://127.0.0.1:5000/registration">Registration</a></li>
+            <li><a href="http://127.0.0.1:5000/login">Login</a></li>
+        </ul>
+    </div>
+
+    
+
+    
+    <script type="text/javascript" src="{{ url_for('static', filename='js/Hike.js') }}"></script>
+</body>
+</html>

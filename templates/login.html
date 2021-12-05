@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/login.css') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>TRAVEL | Login</title>
+</head>
+<body>
+    <section class="showcase">
+      <header>
+        <h2 class="logo">travel</h2>
+        <div class="toggle"></div>
+    </header>
+
+        <div class="overlay"></div>
+          <!-- Begining of Login Card -->
+        <div class="card" id="MainCard">
+          <h1 class="card-title">LOGIN</h1>
+          <div class="card-body">
+            <form>
+
+              <div class="form-group" id="emailBar">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              </div>
+
+
+              <div class="form-row" id="registrationCard">
+                <div class="form-group col-md-10">
+                  <label for="inputPassword4"> Password</label>
+                  <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                </div>
+              </div>
+                  
+                
+                  
+                
+              <button type="submit" >SIGN IN</button>
+            </form>
+      
+          </div>
+          </div>
+
+       
+        
+            <!-- Begining of Social -->
+        <ul class="social">
+            <li><a href="#"><img src="{{ url_for('static', filename='img/facebook.png') }}"></a></li>
+            <li><a href="#"><img src="{{ url_for('static', filename='img/twitter.png') }}"></a></li>
+            <li><a href="#"><img src="{{ url_for('static', filename='img/instagram.png') }}"></a></li>
+        </ul>
+    </section>
+
+  
+            <!-- Begining of Menu -->
+    <div class="menu">
+        <ul>
+            <li><a href="http://127.0.0.1:5000/">Home</a></li>
+            <li><a href="http://127.0.0.1:5000/thingsToDo">Things to Do</a></li>
+            <li><a href="http://127.0.0.1:5000/placesToStay">Places to Stay</a></li>
+            <li><a href="http://127.0.0.1:5000/seasons">Seasons</a></li>
+            <li><a href="http://127.0.0.1:5000/contact">Contact</a></li>
+            <li><a href="http://127.0.0.1:5000/registration">Registration</a></li>
+            <li><a href="http://127.0.0.1:5000/login">Login</a></li>
+        </ul>
+      </div>
+
+    
+
+    
+    <script type="text/javascript" src="{{ url_for('static', filename='js/Hike.js') }}"></script>
+</body>
+</html>
